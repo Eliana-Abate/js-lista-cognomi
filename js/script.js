@@ -8,7 +8,6 @@
 
 var surnameList = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 
-
 var userSurname;
 
 
@@ -17,13 +16,19 @@ do {
 } while (!userSurname);
 
 
-
 if (userSurname) {
     surnameList.push(userSurname);
 }
 
 surnameList.sort();
 console.log(surnameList);
+
+var i = 0;
+while(i < surnameList.length) {
+    i = surnameList[i];
+    console.log(surnameList.indexOf(i));
+    i+= 1;
+}
 
 
 

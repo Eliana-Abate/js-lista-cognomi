@@ -5,3 +5,19 @@
 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
 */ 
 
+
+var surnameList = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
+console.log(surnameList);
+
+var username;
+
+
+do {
+    userSurname = prompt('Inserisci il tuo cognome');  
+} while (!userSurname);
+
+console.log(userSurname);
+
+if (userSurname) {
+    surnameList.push(userSurname);
+}

@@ -16,6 +16,9 @@ do {
 } while (!userSurname);
 
 
+userSurname = userSurname.charAt(0).toUpperCase() + userSurname.slice(1).toLowerCase();
+
+
 if (userSurname) {
     surnameList.push(userSurname);
 }
@@ -23,12 +26,7 @@ if (userSurname) {
 surnameList.sort();
 console.log(surnameList);
 
-var i = 0;
-while(i < surnameList.length) {
-    i = surnameList[i];
-    console.log(surnameList.indexOf(i));
-    i+= 1;
-}
+console.log(surnameList.indexOf(userSurname) +1);
 
 
 

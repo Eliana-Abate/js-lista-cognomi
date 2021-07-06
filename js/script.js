@@ -7,14 +7,13 @@
 
 
 var surnameList = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
-surnameList.sort();
-console.log(surnameList);
 
-var username;
+
+var userSurname;
 
 
 do {
-    userSurname = prompt('Inserisci il tuo cognome');  
+    userSurname = prompt('Inserisci il tuo cognome').toUpperCase();  
 } while (!userSurname);
 
 
@@ -23,6 +22,8 @@ if (userSurname) {
     surnameList.push(userSurname);
 }
 
+surnameList.sort();
+console.log(surnameList);
 
 
 

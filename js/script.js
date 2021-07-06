@@ -28,6 +28,9 @@ console.log(surnameList);
 
 console.log(surnameList.indexOf(userSurname) +1);
 
+var display = document.getElementById('people-list');
+display.innerHTML = surnameList;
+
 
 
 

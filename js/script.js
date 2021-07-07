@@ -12,10 +12,10 @@ var userSurname;
 
 
 do {
-    userSurname = prompt('Inserisci il tuo cognome').toUpperCase();  
-} while (!userSurname);
+    userSurname = prompt('Inserisci il tuo cognome');  
+} while (!userSurname || userSurname.trim() === '');
 
-
+userSurname = userSurname.trim();
 userSurname = userSurname.charAt(0).toUpperCase() + userSurname.slice(1).toLowerCase();
 
 

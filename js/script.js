@@ -28,8 +28,16 @@ console.log(surnameList);
 
 console.log(surnameList.indexOf(userSurname) +1);
 
+
+//Print in Html
+var listItems = '';
+
+for(i = 0; i < surnameList.length; i++) {
+    listItems += '<li>' + surnameList[i] + '</li>';
+}
+
 var display = document.getElementById('people-list');
-display.innerHTML = surnameList;
+display.innerHTML = listItems;
 
 
 
